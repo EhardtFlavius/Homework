@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-block {
+    background-color: chocolate;
+    padding-top: 20px;
+    padding-right: 517px;
+    padding-bottom: 20px;
+    padding-left: 517px;
+    margin-top: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .left-nav {
+    background-color: aquamarine;
+    padding-top: 20px;
+    padding-right: 265px;
+    padding-bottom: 20px;
+    padding-left: 265px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid black;
+
+  }
+  
+  .right-nav {
+    background-color: pink;
+    padding-top: 20px;
+    padding-right: 265px;
+    padding-bottom: 20px;
+    padding-left: 265px;
+    border-radius: 10px;
+    flex: 1;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+
+  .container-div {
+    display: flex;
+  }
+
+.block {
+    background-color: rgb(0, 89, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 60px;
+    margin: 13px;
+    padding-top: 20px;
+    padding-right: 126px;
+    padding-bottom: 20px;
+    padding-left: 126px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.footer-block {
+  width: 44.5%;
+  height: 90px;
+  background-color: #ecdd09;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
