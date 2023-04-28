@@ -1,0 +1,84 @@
+.box {
+  position: relative;
+  top: 150px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: relative;
+  width: 400px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.x-button {
+  position: relative;
+  bottom: 41px;
+  left: 367px;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  position: relative;
+  top: 18px;
+  left: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+input {
+  position: relative;
+  top: 62px;
+  margin-left: -9px;
+  width: 322px;
+  height: 42px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.buttons button {
+  position: relative;
+  top: 74px;
+  right: 1080px;
+  margin-left: 10px;
+}
+
+.button-submit {
+  background-color: rgb(86, 55, 244);
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  width: 82px;
+  height: 50px;
+}
+.button-close {
+  background-color: #fff;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(86, 55, 244);
+  border: none;
+}
+
+.close:hover {
+  color: red;
+}
