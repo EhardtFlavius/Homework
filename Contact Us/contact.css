@@ -1,0 +1,144 @@
+header {
+  background-color: rgb(238, 238, 238);
+}
+.header-div {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 520px;
+  margin-bottom: 50px;
+}
+header div p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.p1 {
+  font-size: 100px;
+}
+.p2 {
+  color: grey;
+  font-size: 60px;
+  margin-top: 135px;
+  padding-left: 20px;
+}
+.container {
+  display: flex;
+  position: relative;
+  background-color: rgb(238, 238, 238);
+  padding: 1%;
+  width: 1000px;
+  left: 808px;
+  height: 450px;
+  border-radius: 4px;
+}
+.form-container div {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.label-form {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.form-container input {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+input[type="email"] {
+  width: 400px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.textarea-div {
+  position: relative;
+  top: -350px;
+  right: -480px;
+  margin-top: 20px;
+}
+textarea {
+  position: relative;
+  left: 26px;
+  bottom: -34px;
+  height: 277px;
+  width: 474px;
+  font-family: inherit;
+  border-radius: 6px;
+  padding-inline-start: 10px;
+  padding-top: 5px;
+  color: rgb(238, 238, 238);
+  margin-top: -16px;
+  border: 2px solid rgb(105, 103, 103);
+}
+
+button {
+  position: relative;
+  background-color: rgb(11, 131, 218);
+  color: #fff;
+  width: 202px;
+  height: 64px;
+  top: -261px;
+  right: -777px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.text-box {
+  width: 437;
+  height: 295;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.bottom-section {
+  display: flex;
+  position: relative;
+  top: 476px;
+  font-size: 35px;
+  margin-left: -150px;
+}
+.link-section {
+  display: flex;
+  position: relative;
+  top: 300px;
+  font-size: 30px;
+}
+.p-section p {
+  height: 12px;
+}
+hr {
+  position: relative;
+  width: 600px;
+  right: 113px;
+  color: rgb(238, 238, 238);
+}
+.link-section {
+  position: relative;
+  top: 115px;
+  right: 853px;
+}
+a {
+  color: rgb(11, 131, 218);
+  cursor: pointer;
+  margin-left: 139px;
+}
+.label-position {
+  position: relative;
+  right: -30px;
+  bottom: -18px;
+}
