@@ -1,0 +1,9 @@
+body {
+  background-color: burlywood;
+}
+
+button {
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 10px;
+}
