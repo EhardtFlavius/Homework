@@ -1,0 +1,90 @@
+.box {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 767px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 415px;
+  height: 315px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: -38px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.x-btn {
+  font-size: 46px;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  left: 370px;
+  top: -46px;
+  cursor: pointer;
+}
+
+label {
+  position: relative;
+  top: 22px;
+  left: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+input {
+  position: relative;
+  top: 39px;
+  margin-left: -9px;
+  width: 368px;
+  left: 26px;
+  height: 42px;
+  font-size: 23px;
+  padding-left: 10px;
+}
+
+.buttons {
+  display: inline-block;
+  margin-top: 10px;
+  position: fixed;
+}
+
+.buttons button {
+  display: inline-block;
+  position: relative;
+  top: 397px;
+  left: 949px;
+  margin-left: 10px;
+}
+
+.button-submit {
+  background-color: rgb(86, 55, 244);
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  width: 109px;
+  height: 50px;
+}
+.button-close {
+  background-color: #fff;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(86, 55, 244);
+  border: none;
+}
+
+.button-close:hover {
+  color: red;
+}
+
+.x-btn:hover {
+  color: red;
+}
