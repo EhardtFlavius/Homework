@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+header p {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#search-input {
+  outline: none;
+  height: 25px;
+  width: 423px;
+  padding: 8px;
+  border: 2px solid orangered;
+  border-radius: 50px;
+  margin-right: 4px;
+}
+
+#search-button {
+  position: relative;
+  right: 44px;
+  padding: 8px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-color: orangered;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 1150px;
+}
+
+.recipe-item img {
+  width: 346px;
+  height: 350px;
+  border-radius: 10px 10px 0 0;
+}
+.recipe-item button {
+  padding: 8px 16px;
+  background-color: orangered;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 18px;
+  left: 121px;
+}
+.recipe-item p {
+  text-align: center;
+}
+
+.recipe-item {
+  width: 346px;
+  flex: 0 0 30%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px !important;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.recipe-item p {
+  margin-top: 33px;
+  margin-bottom: 45px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  color: white;
+  background-color: orangered;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.modal h2,
+.modal p,
+.modal h3 {
+  text-align: center;
+}
+
+.modal img {
+  position: relative;
+  left: 162px;
+  bottom: -18px;
+  margin-bottom: 144px;
+  border-radius: 50%;
+  width: 153px;
+  height: auto;
+}
+#modalCloseBtn {
+  position: relative;
+  left: 460px;
+  font-size: 37px;
+}
+.watch-video-button {
+  position: absolute;
+  bottom: 64px;
+  left: 159px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 30px;
+}
