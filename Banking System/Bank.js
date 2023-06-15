@@ -69,30 +69,30 @@ function updateCheckingBalance(balance) {
 }
 
 // Instantierea conturilor bancare
-const savingsAccount = new SavingsAccount("SA-123456", 1000, 0.05);
-const checkingAccount = new CheckingAccount("CA-789012", 2000, 1000);
+var savingsAccount = new SavingsAccount("SA-123456", 1000, 0.05);
+var checkingAccount = new CheckingAccount("CA-789012", 2000, 1000);
 
 // Funcții pentru manipularea conturilor bancare prin interacțiunea cu butoanele HTML
 function depositSavings() {
-  const amount = 1500;
+  var amount = 1500;
   savingsAccount.deposit(amount);
   updateSavingsBalance(savingsAccount.getBalance());
 }
 
 function withdrawSavings() {
-  const amount = 200;
+  var amount = 200;
   savingsAccount.withdraw(amount);
   updateSavingsBalance(savingsAccount.getBalance());
 }
 
 function depositChecking() {
-  const amount = 700;
+  var amount = 700;
   checkingAccount.deposit(amount);
   updateCheckingBalance(checkingAccount.getBalance());
 }
 
 function withdrawChecking() {
-  const amount = 500;
+  var amount = 500;
   checkingAccount.withdraw(amount);
   updateCheckingBalance(checkingAccount.getBalance());
 }
