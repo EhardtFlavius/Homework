@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank Account de IT </title>
+    <link rel="stylesheet" type="text/css" href="Bank.css">
+</head>
+
+<body>
+    <h1>Bank Account de IT</h1>
+
+    <div class="account">
+        <h2>Savings Account</h2>
+        <p>Account Number: SA-123456</p>
+        <p>Balance: <span id="savings-balance"></span></p>
+        <button class="button" onclick="depositSavings()">Deposit $1500</button>
+        <button class="button" onclick="withdrawSavings()">Withdraw $200</button>
+    </div>
+
+    <div class="account">
+        <h2>Checking Account</h2>
+        <p>Account Number: CA-789012</p>
+        <p>Balance: <span id="checking-balance"></span></p>
+        <button class="button" onclick="depositChecking()">Deposit $700</button>
+        <button class="button" onclick="withdrawChecking()">Withdraw $500</button>
+    </div>
+
+    <script src="Bank.js"></script>
+</body>
+
+</html>

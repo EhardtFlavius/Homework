@@ -1,0 +1,151 @@
+.container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  color: rgb(0, 89, 255);
+  font-size: 35px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.img-class {
+  width: 100px;
+  height: 100px;
+}
+
+.product-details {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.button-cart {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-view {
+  background-color: #008cba;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+.second-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: none;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+#cartItems,
+#totalPrice {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#discountCodeInput {
+  width: 285px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#apply {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: #008cba;
+  color: white;
+  border-radius: 3px;
+  position: relative;
+  left: 25%;
+}
+#applyDiscountButton {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  left: -120px;
+  background-color: #008cba;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 303px;
+}
+
+.product-image {
+  display: none;
+  width: 200px;
+  height: auto;
+}
