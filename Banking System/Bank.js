@@ -69,8 +69,8 @@ function updateCheckingBalance(balance) {
 }
 
 // Instantierea conturilor bancare
-var savingsAccount = new SavingsAccount("SA-123456", 1000, 0.05);
-var checkingAccount = new CheckingAccount("CA-789012", 2000, 1000);
+var savingsAccount = new SavingsAccount("Ehardt Flavius", 1000, 0.05);
+var checkingAccount = new CheckingAccount("EhardtFlavi", 2000, 1000);
 
 // Funcții pentru manipularea conturilor bancare prin interacțiunea cu butoanele HTML
 function depositSavings() {
