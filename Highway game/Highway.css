@@ -1,0 +1,28 @@
+.highway {
+  width: 800px;
+  height: 200px;
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.vehicle {
+  width: 80px;
+  height: 40px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s linear;
+}
+
+.car {
+  background-color: #f2b1af;
+}
+
+.bus {
+  background-color: #b5e3a8;
+}
+
+.truck {
+  background-color: #b8cce4;
+}
