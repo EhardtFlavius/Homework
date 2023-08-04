@@ -1,28 +1,37 @@
-.highway {
-  width: 800px;
-  height: 200px;
-  background-color: #ddd;
-  position: relative;
-  overflow: hidden;
-}
-
-.vehicle {
-  width: 80px;
-  height: 40px;
-  background-color: #000;
+.hero {
+  width: 500px;
+  height: 500px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  bottom: 0;
-  transition: all 1s linear;
+  top: 350px;
+  left: 850px;
+  padding: 0 5%;
+  display: flex;
+  font-size: 17px;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.car {
-  background-color: #f2b1af;
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 50px;
 }
-
-.bus {
-  background-color: #b5e3a8;
+.back-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.truck {
-  background-color: #b8cce4;
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: 100%;
+  }
 }

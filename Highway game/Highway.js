@@ -1,41 +1,43 @@
+// Functia Highway
 function Highway(vignetteCost) {
   this.vehicleList = [];
   this.vignetteCost = vignetteCost;
 }
-
+// Intrarea pe Autobanda
 Highway.prototype.enterHighway = function (vehicle) {
   this.vehicleList.push(vehicle);
-  console.log(vehicle.driver.name + " entered the highway.");
+  logToContainer(vehicle.driver.name + " entered the highway.");
   if (vehicle instanceof Car) {
     vehicle.payVignette(this.vignetteCost);
     vehicle.driver.walletMoney -= this.vignetteCost;
-  } else if (vehicle instanceof Police) {
-    console.log(vehicle.driver.name + " (Police) entered the highway.");
+  } else if (vehicle instanceof Bus || vehicle instanceof Truck) {
+    vehicle.payVignette(this.vignetteCost);
   }
 
   vehicle.increaseSpeed();
-
+  // Timpul pentrecut pina la destinatie a vehicului
   setTimeout(function () {
     console.log(vehicle.name + " reached its destination.");
   }, 5000);
 };
+// Vehicle function
 function Vehicle(name, runningSpeed, driver) {
   this.name = name;
   this.runningSpeed = runningSpeed;
   this.driver = driver;
 }
-
+//  increase speed function
 Vehicle.prototype.increaseSpeed = function (speed) {
   if (typeof speed === "number" && !isNaN(speed)) {
     this.runningSpeed += speed;
-    console.log(
+    logToContainer(
       `${this.name} increased its speed by ${speed} km/h. Current speed is ${this.runningSpeed} km/h.`
     );
   } else {
-    console.log("To slow . Please accelerate.");
+    logToContainer("To slow . Please accelerate.");
   }
 };
-
+// Bus Function
 function Bus(name, runningSpeed, driver) {
   Vehicle.call(this, name, runningSpeed, driver);
 }
@@ -43,9 +45,9 @@ function Bus(name, runningSpeed, driver) {
 Bus.prototype = Object.create(Vehicle.prototype);
 Bus.prototype.constructor = Bus;
 Bus.prototype.payVignette = function (cost) {
-  console.log(this.driver.name + " paid the vignette fee of $" + cost + ".");
+  logToContainer(this.driver.name + " paid the vignette fee of $" + cost + ".");
 };
-
+//  Car class
 function Car(name, runningSpeed, driver) {
   Vehicle.call(this, name, runningSpeed, driver);
 }
@@ -53,8 +55,10 @@ function Car(name, runningSpeed, driver) {
 Car.prototype = Object.create(Vehicle.prototype);
 Car.prototype.constructor = Car;
 Car.prototype.payVignette = function (cost) {
-  console.log(this.driver.name + " paid the vignette fee of $" + cost + ".");
+  logToContainer(this.driver.name + " paid the vignette fee of $" + cost + ".");
 };
+
+// Truck class
 function Truck(name, runningSpeed, driver) {
   Vehicle.call(this, name, runningSpeed, driver);
 }
@@ -62,14 +66,15 @@ function Truck(name, runningSpeed, driver) {
 Truck.prototype = Object.create(Vehicle.prototype);
 Truck.prototype.constructor = Truck;
 Truck.prototype.payVignette = function (cost) {
-  console.log(this.driver.name + " paid the vignette fee of $" + cost + ".");
+  logToContainer(this.driver.name + " paid the vignette fee of $" + cost + ".");
 };
-
+// Driver Class
 function Driver(name, walletMoney) {
   this.name = name;
   this.walletMoney = walletMoney;
 }
 
+// Police Class
 function Police(name, runningSpeed, driver) {
   Vehicle.call(this, name, runningSpeed, driver);
 }
@@ -89,25 +94,26 @@ Police.fineByVehicleType = {
   Truck: 250,
 };
 
+// Functia de verificat viteza a politiei
 Police.prototype.checkVehicleSpeed = function (vehicle) {
   let vehicleType = vehicle.constructor.name;
   let speedLimit = Police.speedLimitByVehicleType[vehicleType];
 
   if (vehicle.runningSpeed > speedLimit) {
     let fineAmount = Police.fineByVehicleType[vehicleType];
-    console.log(
+    logToContainer(
       `Police found  ${vehicle.name} driven above the speed limit. Police enter the Highway and made the driver pay the Fine amount: ${fineAmount}$`
     );
 
     vehicle.driver.walletMoney -= fineAmount;
-    console.log(
+    logToContainer(
       `After paid fine ${vehicle.driver.name}'s wallet money amount is now ${vehicle.driver.walletMoney}`
     );
   } else {
-    return console.log(`${vehicle.name} is driving within the speed limit`);
+    return logToContainer(`${vehicle.name} is driving within the speed limit`);
   }
 };
-
+//  classele Driver si Vehicle
 let driver1 = new Driver("Max Prime", 500);
 let driver2 = new Driver("Star Scream", 800);
 let driver3 = new Driver("Optimus Prime", 1200);
@@ -131,3 +137,9 @@ let police = new Police("Officer Funky");
 police.checkVehicleSpeed(bus);
 police.checkVehicleSpeed(car);
 police.checkVehicleSpeed(truck);
+logToContainer;
+// Functie de a muta console.log in Html
+function logToContainer(message) {
+  var logContainer = document.getElementById("logContainer");
+  logContainer.innerHTML += message + "<br>";
+}
