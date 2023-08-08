@@ -1,0 +1,38 @@
+.section-title {
+  position: relative;
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(225, 20%, 96%);
+  height: 40vh;
+  display: flex;
+  z-index: 4;
+  bottom: 537px;
+}
+
+.game-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  width: 502px;
+  height: 100px;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+.section-title-project {
+  background-image: url("/ProiectFinal/Pictures/stars.png");
+  position: relative;
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(225, 20%, 96%);
+  height: 40vh;
+  display: flex;
+  z-index: 1;
+  top: -167px;
+}

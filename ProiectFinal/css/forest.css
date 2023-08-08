@@ -1,0 +1,20 @@
+.forest-container {
+  background-image: url("/ProiectFinal/Pictures/stars.png");
+  background-size: 50%;
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  top: -182px;
+}
+
+.forest-container .img-front {
+  height: 833px;
+  width: 100%;
+}
+
+.forest-container .img-mid {
+  position: relative;
+  height: 833px;
+  width: 100%;
+  top: -829px;
+}

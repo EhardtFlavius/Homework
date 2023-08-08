@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Meal</title>
+    <link rel="stylesheet" href="cooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Find Meals For Your Ingredients</h1>
+        <p>Real food doesn't have ingredients, real food is ingredients.</p>
+        <p>-Jamie Oliver</p>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <h2 id="searchResultsTitle"></h2>
+    <div class="recipe-list" id="recipeList"></div>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span id="modalCloseBtn" class="close">&times;</span>
+            <div id="recipeModalContent"></div>
+        </div>
+    </div>
+
+    <script src="cooking.js"></script>
+</body>
+
+</html>

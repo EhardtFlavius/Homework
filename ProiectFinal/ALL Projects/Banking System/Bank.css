@@ -1,0 +1,92 @@
+body {
+  background-image: url(https://img.freepik.com/free-photo/banking-financial-technology-with-currency-symbols-background_53876-104211.jpg?w=1800&t=st=1686845779~exp=1686846379~hmac=4267718b324cb9e94f5eefd8c0a90abc856b3d3129d59dca2bca807a322c19c4);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 55px;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 700px;
+  align-items: center;
+  color: blanchedalmond;
+  width: 1000px;
+  border: 1px solid blanchedalmond;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  font-weight: 900;
+  transition-duration: 0.2s;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button:after {
+  filter: blur(50px);
+}

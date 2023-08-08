@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/test.css">
+
+<body>
+    <header>
+        <a href=" #" class="logo">EHARDT FLAVIUS</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">My Work</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="Pictures/stars.png" id="stars">
+        <img src="Pictures/moon.png" id="moon">
+        <img src="Pictures/mountains_behind.png" id="mountains_behind">
+        <h1 id="text">Ehardt Flavius</h1>
+        <img src="Pictures/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2 class="h2-container">The Begining</h2>
+        <p>My adventure started in 2010 when I entered the computer science faculty. Where I learned the production
+            and functionality of a computer, and the programs to use on them, but I didn't find anything that really
+            attracted me, I tried c++, cad, etc., I was disappointed, nothing I had had magic creativity to it see
+            with your eyes I left the country to give myself a chance to learn a culture or a job or something that
+            I can give myself with all my heart, I didn't find anything.
+            on January 15, 2023, I entered IT school, I heard that there are very beautiful ways to code and the
+            coding system has evolved extremely,
+            there I made very good colleagues, exceptional teachers and I learned and worked with many coding
+            languages "Html, Css, Js, Database, Testing", I was mesmerized by how beautiful it was, I tried them all
+            of them, but I liked the Front End the most because I could give way to my imagination and create
+            everything that comes to my mind and I can see it live. From this point I made a decision, I will give
+            myself all my heart and hope to learn as much as possible and fulfill my dream<br><br>
+        </p>
+    </div>
+    <div class="panel body" id="body">
+        <div class="container">
+            <div class="panel active"
+                style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');"
+                onclick="togglePanel(this)">
+                <h3>Explore The World</h3>
+            </div>
+
+            <div class="panel "
+                style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');"
+                onclick="togglePanel(this)">
+                <h3>Wild Forest</h3>
+            </div>
+
+            <div class="panel"
+                style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');"
+                onclick="togglePanel(this)">
+                <h3>Sunny Beach</h3>
+            </div>
+
+            <div class="panel"
+                style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');"
+                onclick="togglePanel(this)">
+                <h3>City on Nature</h3>
+            </div>
+
+            <div class="panel"
+                style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');"
+                onclick="togglePanel(this)">
+                <h3>Mountains - Clouds</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section-title-project">
+        <h3 class="game-title">My Projects
+        </h3>
+    </div>
+    <div class="forest-container">
+        <img src="/ProiectFinal/Pictures/layer-front.png" class="img-front">
+        <img src="/ProiectFinal/Pictures/layer-middle.png" class="img-mid">
+        <div class="button-container">
+            <div class="rgb-style">
+                <button class="button-rgb" id="banking" data-page="./ALL Projects/Banking System/Bank.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Banking System</button>
+                <button class="button-rgb" id="booking"
+                    data-page="/ProiectFinal/ALL Projects/Booking homework/booking.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Booking</button>
+                <button class="button-rgb" id="contact"
+                    data-page="/ProiectFinal/ALL Projects/Contact Us/contact us.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Contact Us</button>
+                <button class="button-rgb" id="cookie"
+                    data-page="/ProiectFinal/ALL Projects/Cookie homework/Cookie.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Cookie Project</button>
+                <button class="button-rgb" id="cooking"
+                    data-page="/ProiectFinal/ALL Projects/Cooking Homework/Homework-cooking.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank" target="_blank">Cooking Project</button>
+                <button class="button-rgb" id="dom"
+                    data-page="/ProiectFinal/ALL Projects/DOM manipulation/Contact Form.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">DOM
+                    manipulation</button>
+                <button class="button-rgb" id=formH
+                    data-page="/ProiectFinal/ALL Projects/Form Homework/Form Homework.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Form
+                    Homework</button>
+                <button class="button-rgb" id="Highway" data-page="/ProiectFinal/ALL Projects/Highway game/Highway.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Highway Game</button>
+                <button class="button-rgb" id="Layout"
+                    data-page="/ProiectFinal/ALL Projects/Layout Homework/PC layout.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Layout Homework</button>
+                <button class="button-rgb" id="library" data-page="/ProiectFinal/ALL Projects/LibraryBooks/Library.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">LibraryBooks</button>
+                <button class="button-rgb" id="ontop"
+                    data-page="/ProiectFinal/ALL Projects/on top layout/on top layout.html"
+                    onclick="loadPage(this.dataset.page)" target="blank">On Top
+                    Layout</button>
+                <button class="button-rgb" id="onlineS"
+                    data-page="/ProiectFinal/ALL Projects/Online Shoping System/PC layout.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Online Shoping</button>
+                <button class="button-rgb" id="rick"
+                    data-page="/ProiectFinal/ALL Projects/Rick and Morty/Rick and Morty.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Rick
+                    And Morty api</button>
+                <button class="button-rgb" id="rock"
+                    data-page="/ProiectFinal/ALL Projects/Rock Paper Sissors/Version 1 adv try/Game.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Rock
+                    Paper Sissors Game</button>
+                <button class="button-rgb" id="uber" data-page="/ProiectFinal/ALL Projects//Uber/Uber.html"
+                    onclick="loadPage(this.dataset.page)" target="_blank">Uber</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="section-title">
+        <h3 class="game-title">MY GAME LIFE</h3>
+    </div>
+    <article class="game-contrainer">
+        <section class="bg">
+            <img class="monitor" src="/ProiectFinal/Pictures/0a552d5fda9ba6f959cdae0f065ddeb7.gif">
+            <img class="base-monitor" src="/ProiectFinal/Pictures/h525.png">
+
+        </section>
+        <section class="bg">
+            <img class="monitor" src="/ProiectFinal/Pictures/Diablo-4.gif">
+            <img class="base-monitor" src="/ProiectFinal/Pictures/h525.png">
+        </section>
+        <section class="bg">
+            <img class="monitor" src="/ProiectFinal/Pictures/undecember.gif">
+            <img class="base-monitor" src="/ProiectFinal/Pictures/h525.png">
+        </section>
+        <p class="game-paragraf">The Game that y play and the game that make my mind go really fant high concentration
+            and high competition i
+            master all of them </p>
+    </article>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Search for your GAMES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            </ul>
+            <form class="d-flex search-bar-loc" role="search">
+                <input class="form-control me-2" type="search" placeholder="Caută live games..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <footer>EHARDT FLAVIUS</footer>
+    <script src="js/Parallax.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+        type="module"></script>
+    <script src="js/Main.js" type="module"></script>
+    <script src="js/cards.js"> </script>
+    <script src="js/modal.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
