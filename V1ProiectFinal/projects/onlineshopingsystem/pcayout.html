@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="pclayout.css">
+    <title>Top Rank PC</title>
+</head>
+
+<body>
+    <header class="container-header">
+        <p>R A N K - P L A Y E R</p>
+    </header>
+    <div>
+        <h1>Best PC Style</h1>
+    </div>
+
+    <div class="main-container">
+        <div>
+            <img class="img-class" src="Primul.png">
+        </div>
+        <div class="product-details">
+            <h2 class="product-name">Galaxy Black</h2>
+            <p class="product-price">Price: €2103.00</p>
+            <img id="product1Image" class="product-image" src="Primul.png" alt="Galaxy Black">
+        </div>
+        <div class="buttons-container">
+            <button class="button-cart" data-product-name="Galaxy Black" data-product-price="2103.00">Add to
+                Cart</button>
+            <button class="button-view" onclick="displayProduct(1)">View</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div>
+            <img class="img-class" src="Doi.png">
+        </div>
+        <div class="product-details">
+            <h2 class="product-name">Dark Void</h2>
+            <p class="product-price">Price: €1800.00</p>
+            <img id="product2Image" class="product-image" src="Doi.png" alt="Dark Void">
+        </div>
+        <div class="buttons-container">
+            <button class="button-cart" data-product-name="Dark Void" data-product-price="1800.00">Add to Cart</button>
+            <button class="button-view" onclick="displayProduct(2)">View</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div>
+            <img class="img-class" src="Trei.png">
+        </div>
+        <div class="product-details">
+            <h2 class="product-name">Pure Snow</h2>
+            <p class="product-price">Price: €2000.00</p>
+            <img id="product3Image" class="product-image" src="Trei.png" alt="Pure Snow">
+        </div>
+
+
+        <div class="buttons-container">
+            <button class="button-cart" data-product-name="Pure Snow" data-product-price="2000.00">Add to Cart</button>
+            <button class="button-view" onclick="displayProduct(3)">View</button>
+        </div>
+
+    </div>
+
+    <div class="second-container">
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Apply Discount Percentage</h3>
+                <input type="number" id="discountCodeInput" placeholder="Enter discount percentage (0-100)">
+                <button id="apply">Apply</button>
+            </div>
+        </div>
+
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total Price: €0.00</p>
+        <button id="applyDiscountButton" onclick="openModal()">Apply Discount</button>
+    </div>
+    <script src="shopping.js"></script>
+</body>
+
+</html>

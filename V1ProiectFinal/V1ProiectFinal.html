@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="v1testcss.css">
+    <link rel="stylesheet" href="neonbutton.css">
+    <link rel="stylesheet" href="titles.css">
+    <link rel="stylesheet" href="mediadimension.css">
+    
+    </head>
+    <body class="background-stars">
+        <header>
+            <a href=" #" class="logo">EHARDT FLAVIUS</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About ME</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Education</a></li>
+    
+            </ul>
+        </header>
+        <section>
+            <img class="img-style" src="Pictures/moon.png" id="moon">
+            <img class="img-style" src="Pictures/mountains_behind.png" id="mountains_behind">
+            <h1 id="text">Ehardt Flavius</h1>
+            <img class="img-style" src="Pictures/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec container" id="sec">
+            <h2 class="h2-container text-white text-center">The Begining</h2>
+            <p class="text-white fs-3">My adventure started in 2010 when I entered the computer science faculty. Where I learned the production
+                and functionality of a computer, and the programs to use on them, but I didn't find anything that really
+                attracted me, I tried c++, cad, etc., I was disappointed, nothing I had had magic creativity to it see
+                with your eyes I left the country to give myself a chance to learn a culture or a job or something that
+                I can give myself with all my heart, I didn't find anything.
+                on January 15, 2023, I entered IT school, I heard that there are very beautiful ways to code and the
+                coding system has evolved extremely,
+                there I made very good colleagues, exceptional teachers and I learned and worked with many coding
+                languages "Html, Css, Js, Database, Testing", I was mesmerized by how beautiful it was, I tried them all
+                of them, but I liked the Front End the most because I could give way to my imagination and create
+                everything that comes to my mind and I can see it live. From this point I made a decision, I will give
+                myself all my heart and hope to learn as much as possible and fulfill my dream<br><br>
+            </p>
+        </div>
+
+        <div class="text-center panel body moonpic-background" id="body">
+            <div class="container container-first background-stars">
+                <div class="panel active d-flex align-items-center"
+                    style="background-image: url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.6435-9/62140416_1251547341675816_7026434434601582592_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7a1959&_nc_ohc=q-eUclTRdtQAX91N-14&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCsyrY8BvqiDT3x6Qk2hnYKjmKyD28MFL6Gl2k1udrjHQ&oe=64FC2A66');"
+                    onclick="togglePanel(this)">
+                    <h3>The Persone I Love</h3>
+                </div>
+    
+                <div class="panel "
+                    style="background-image: url('https://scontent.ftsr1-1.fna.fbcdn.net/v/t1.6435-9/134990290_1751145445049334_8902188397592842549_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=Ee5AabnsDzkAX_DD8kw&_nc_ht=scontent.ftsr1-1.fna&oh=00_AfD6L12Y_CnAk3QWDAomXa-3XkubTR4rgyV2ZJYfBFRlAA&oe=64FC3668');"
+                    onclick="togglePanel(this)">
+                    <h3>The life i love</h3>
+                </div>
+    
+                <div class="panel"
+                    style="background-image: url('https://cdn.wccftech.com/wp-content/uploads/2022/04/31cuwwdsvbt71.jpg');"
+                    onclick="togglePanel(this)">
+                    <h3>The Game i play </h3>
+                </div>
+    
+                <div class="panel"
+                    style="background-image: url('https://storage0.dms.mpinteractiv.ro/media/1/1481/21449/18423655/1/97589138-m.jpg');"
+                    onclick="togglePanel(this)">
+                    <h3>The City I Love </h3>
+                </div>
+    
+                <div class="panel"
+                    style="background-image: url('https://organicsfood.ro/wp-content/uploads/2022/08/2edff2f2.jpg');"
+                    onclick="togglePanel(this)">
+                    <h3>The Food I Prefer</h3>
+                </div>
+            </div>
+        </div> 
+        <div class="container text-center mt-5">
+            <div>
+                <h3 class="text-white project-custom word">MY PROJECTS</h3>
+            </div>
+        </div>
+        <div class="container text-center button-custom-position">
+            <div class="row">
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="banking"
+                        data-page="/projects/bankingsystem/Bank.html" onclick="loadPage(this.dataset.page)"
+                        target="_blank">Banking System</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="booking"
+                        data-page="/projects/bookinghomework/booking.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Booking</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="contact"
+                        data-page="/projects/contactus/contactus.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Contact Us</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="cookie"
+                        data-page="/projects/cookiehomework/Cookie.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Cookie Project</button>
+                </div>
+                <div class="col-4 mb-3">
+                    <button class="button-rgb btn  btn-lg" id="cooking"
+                        data-page="/projects/cookinghomework/homeworkcooking.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Cooking Project</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="dom"
+                        data-page="/projects/dommanipulation/Contact Form.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">DOM manipulation</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="formH"
+                        data-page="/projects/formhomework/formhomework.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Form Homework</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="Highway"
+                        data-page="/projects/highwaygame/Highway.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Highway Game</button>
+                </div>
+                <div class="col-4 mb-3">
+                    <button class="button-rgb btn  btn-lg" id="Layout"
+                        data-page="/projects/layouthomework/pclayout.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Layout Homework</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="library"
+                        data-page="/projects/LibraryBooks/Library.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">LibraryBooks</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="ontop"
+                        data-page="/projects/ontoplayout/ontoplayout.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">On Top Layout</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="onlineS"
+                        data-page="/projects/onlineshopingsystem/pcayout.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Online Shopping</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="rick"
+                        data-page="/projects/rickandmorty/rickandmorty.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Rick And Morty API</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="rock"
+                        data-page="/projects/rockpapersissors/Version 1 adv try/Game.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Rock Paper Scissors Game</button>
+                </div>
+                <div class="col-4 mb-3 ">
+                    <button class="button-rgb btn  btn-lg" id="uber" data-page="/projects/Uber/Uber.html"
+                        onclick="loadPage(this.dataset.page)" target="_blank">Uber</button>
+                </div>
+            </div>
+        </div>
+
+
+       <!-- Nav Bar -->
+       <nav class="navbar  navbar-expand-sm navbar-dark bg-black">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-3  nav-custom-title" href="#">Search for GAMES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse background-stars" id="navbarSupportedContent">
+                <div class="nav-custom-pos">
+                    <ul class="navbar-nav  text-center me-auto mb-2 mb-sm-0">
+                        <li class="nav-item ml-4 nav-button nav-custom">
+                            <a class="btn button-rgb border-0" href="https://diablo4.blizzard.com/en-us/" target="_blank">Diablo
+                                4</a>
+                        </li>
+                        <li class="nav-item  ml-4 nav-button nav-custom ">
+                            <a class="btn button-rgb border-0" href="https://www.naeu.playblackdesert.com/en-US/Main/Index"
+                                target="_blank">Black Desert</a>
+                        </li>
+                        <li class="nav-item ml-4">
+                            <a class="btn button-rgb border-0" href="https://store.steampowered.com/app/1549250/UNDECEMBER/"
+                                target="_blank">Undecember</a>
+                        </li>
+                        <li class="nav-item ml-4">
+                            <a class="btn button-rgb border-0" href="#" data-bs-toggle="modal"
+                                data-bs-target="#helpModal">Remainder</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="holder-pos">
+                    <form class="d-flex search-bar-loc" id="search-form" onsubmit="handleSearch(event)" role="search">
+                        <input id="search-input" class="p-holder form-control mr-2" type="search" placeholder="Caută live games..." aria-label="Search">
+                        <button class="btn button-rgb btn-outline-success search-button-custom" id="search-button" type="submit">Search</button>
+                    </form>
+                </div>                    
+            </div>
+        </div>
+    </nav>
+        <div class="modal" tabindex="-1" role="dialog" id="helpModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Search Results</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table center ">
+            <div class="monitor-wrapper center">
+                <div class="monitor center">
+                    <p>Search For Game and Have Fun</p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div>
+                <div>
+                    <p class="text-white text-style">The Game that y play and the game that make my mind go really fant high
+                        concentration and high competition i master all of them </p>
+                </div>
+            </div>
+        </div> 
+        <div class="container text-center">
+            <div>
+                <img src="/Pictures/NicePng_anime-flower-png_3183538.png">
+            </div>
+        </div>
+
+        <div class="container text-center background-stars mb-5">
+            <div class="row">
+                <div class="col">
+                    <img class="img img-fluid rounded img-custom" src="/Pictures/0a552d5fda9ba6f959cdae0f065ddeb7.gif">
+                </div>
+                <div class="col">
+                    <img class="img img-fluid rounded img-custom" src="/Pictures/Diablo-4.gif">
+                </div>
+                <div class="col">
+                    <img class="img img-fluid rounded img-custom" src="/Pictures/undecember.gif">
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-5">
+            <div class="mt-4 mb-4">
+                <button type="button" class="button-rgb" data-toggle="modal" data-target="#myModal">
+                    Leave a Message
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="modal" tabindex="-1" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                    <div class="modal-header">
+                        <h4 class="modal-title">Leave a Message</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                   
+                    <div class="modal-body">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="name">Nume:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Introduceți numele">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj:</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Introduceți mesajul"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>
+                  
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-dark custom-footer-bg">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-white mt-3">EHARDT FLAVIUS</h4>
+                    </div>
+                    <div class="col fs-3 mt-2 ">
+                        <a href="https://www.facebook.com/ehardt.flavius" target="_blank">
+                            <i class="footer-style fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="col fs-3 mt-2">
+                        <a href="https://www.instagram.com/ehardtflavius/" target="_blank">
+                            <i class="footer-style fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="col fs-3 mt-2">
+                        <a href="https://github.com/EhardtFlavius/Homework.git" target="_blank">
+                            <i class="footer-style fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script  src="v1testscript.js"></script>
+        <script  src="api.js"></script>
+        <script src="paralax.js"></script>
+        <script src="cards.js"></script>
+        <script src="animatedtitle.js"></script>
+        <!-- <script></script> -->
+        <!-- <script></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+</html>

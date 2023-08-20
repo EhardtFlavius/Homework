@@ -1,0 +1,54 @@
+/* Stilurile pentru dimensiuni mari de ecran */
+.nav-custom {
+    border-radius: 20px;
+  }
+  
+  .nav-custom-pos {
+    position: relative;
+    left: 12%;
+  }
+  
+  .holder-pos {
+    position: relative;
+    left: 18%;
+    width: 30%;
+    top: 8px;
+  }
+  
+  .nav-custom-title {
+    position: relative;
+    left: 5%;
+  }
+  
+  .search-button-custom {
+    position: relative;
+    bottom: 8px;
+  }
+  
+  /* Media query pentru ecrane mai mici de 1200px */
+  @media (max-width: 1200px) {
+    .nav-custom {
+      border-radius: 10px; /* Modifică stilurile pentru dimensiuni mai mici */
+    }
+    .nav-custom-pos {
+      left: 5%; /* Modifică poziția butoanelor la dimensiuni mai mici */
+    }
+    .holder-pos {
+      left: 8%; /* Modifică poziția holderului la dimensiuni mai mici */
+      width: 40%; /* Ajustează lățimea */
+      top: 0; /* Resetarea top-ului */
+    }
+    .nav-custom-title {
+      left: 3%; /* Modifică poziția titlului la dimensiuni mai mici */
+    }
+    .search-button-custom {
+      bottom: 0; /* Resetarea bottom-ului */
+    }
+  }
+  
+  /* Media query pentru ecrane mai mici de 992px */
+  @media (max-width: 992px) {
+    .nav-custom-title {
+      left: 2%; /* Modifică poziția titlului la dimensiuni mai mici */
+    }
+  }

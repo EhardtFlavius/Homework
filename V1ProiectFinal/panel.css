@@ -1,0 +1,60 @@
+#body {
+    box-sizing: border-box;
+    background-color: #1c0522;
+    border-radius: 0;
+    object-fit: cover;
+    position: relative;
+    top: auto;
+    width: 106%;
+  
+  }
+  
+  .panel.body {
+    font-family: "Muli", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+  }
+  
+  .container-first {
+    display: flex;
+    border-radius: 65px;
+    width: 90vw;
+    background-color: #1c0522;
+    position: relative;
+    top: 44px;
+    right: 2%;
+  }
+  
+  .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5s ease-in;
+    color: #fff;
+    cursor: pointer;
+    top: 2px;
+  }
+  
+  .panel h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.4s;
+  }

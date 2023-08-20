@@ -1,0 +1,106 @@
+class Book {
+  constructor(title, author, isbn) {
+    this.title = title;
+    this.author = author;
+    this.isbn = isbn;
+  }
+  get getTitle() {
+    return this.title;
+  }
+  set setTitle(title) {
+    this.title = title;
+  }
+  get getAuthor() {
+    return this.author;
+  }
+  set setAuthor(author) {
+    this.author = author;
+  }
+}
+
+class Magazine extends Book {
+  constructor(title, author, isbn, issueNumber) {
+    super(title, author, isbn);
+    this.issueNumber = issueNumber;
+  }
+  get getIssueNumber() {
+    return this.issueNumber;
+  }
+  set setIssueNumber(issueNumber) {
+    this.issueNumber = issueNumber;
+  }
+}
+
+class Library {
+  constructor(name) {
+    this.name = name;
+    this.books = [];
+  }
+
+  addBook(book) {
+    this.books = [...this.books, book];
+  }
+
+  removeBook(isbn) {
+    this.books = this.books.filter((book) => book.isbn !== isbn);
+  }
+
+  findBookByAuthor(author) {
+    this.books = this.books.filter((book) => book.author === author);
+  }
+
+  listBooks() {
+    this.books.forEach((book) => {
+      console.log(book);
+    });
+  }
+
+  getTotal() {
+    return this.books.length;
+  }
+
+  getBooksWithTitleContaining(title) {
+    this.books = this.books.filter((book) => book.title.includes(title));
+  }
+
+  getUniqueAuthors() {
+    const uniqueAuthors = Array.from(
+      new Set(this.books.map((book) => book.author))
+    );
+    return uniqueAuthors;
+  }
+
+  hasAnyBooksByAuthor(author) {
+    return this.books.some((book) => book.author === author);
+  }
+
+  haveAllBooksByAuthor(author) {
+    return this.books.every((book) => book.author === author);
+  }
+
+  getBookTitles() {
+    return this.books.map((book) => book.title);
+  }
+}
+
+const book1 = new Book("carte1", "Flavius", "123");
+const book2 = new Book("carte2", "Dumitru", "124");
+const book3 = new Book("carte3", "Razvan", "125");
+const magazine1 = new Magazine("magazine1", "Iulian", "1265", 2);
+
+const library = new Library("Librarie");
+library.addBook(book1);
+library.addBook(book2);
+library.addBook(book3);
+
+library.getBooksWithTitleContaining("carte");
+library.listBooks();
+
+console.log(library.books);
+console.log(library.getTotal());
+console.log(library.hasAnyBooksByAuthor("Flavius")); // true
+console.log(library.haveAllBooksByAuthor("Flavius")); // false
+console.log(library.getBookTitles()); // ["Carte 1", "Carte 2", "Carte 3", "Magazine 1"]
+
+const uniqueAuthors = library.getUniqueAuthors();
+console.log(uniqueAuthors);
