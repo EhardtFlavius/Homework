@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
   }
 
   if (text) {
-    text.style.marginRight = value * 4 + "px";
+    text.style.marginRight = value * 2 + "px";
     text.style.marginTop = value * 1.5 + "px";
   }
 

@@ -1,0 +1,53 @@
+@keyframes parallaxAnimation {
+    0% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+  @media (max-width: 1536px) {
+    header {
+      padding: 20px;
+      flex-direction: row;
+      text-align: center;
+    }
+  
+    header .logo {
+      font-size: 1.5em;
+      left: 0;
+    }
+  
+    header ul {
+      margin-top: 20px;
+      right: 109px;
+    }
+  
+    header ul li {
+      margin: 0 10px;
+    }
+  
+    section {
+      padding: 50px;
+    }
+  
+    #text {
+      right: 0;
+      font-size: 4vw;
+      transform: translateY(0);
+    }
+  
+    #btn {
+      font-size: 1.2em;
+      transform: translateY(0);
+    }
+  
+    .sec {
+      padding: 34px;
+    }
+  
+    .sec p {
+      margin-left: 20px;
+      width: auto;
+    }
+  }

@@ -1,7 +1,6 @@
 #body {
     box-sizing: border-box;
     background-color: #1c0522;
-    border-radius: 0;
     object-fit: cover;
     position: relative;
     top: auto;
@@ -21,7 +20,7 @@
   
   .container-first {
     display: flex;
-    border-radius: 65px;
+    
     width: 90vw;
     background-color: #1c0522;
     position: relative;
@@ -34,13 +33,12 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border-radius: 50px;
+    
     flex: 0.5;
     position: relative;
     transition: flex 0.5s ease-in;
     color: #fff;
     cursor: pointer;
-    top: 2px;
   }
   
   .panel h3 {
