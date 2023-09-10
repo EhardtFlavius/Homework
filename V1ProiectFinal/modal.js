@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const modalTriggers = document.querySelectorAll('.modal-trigger');
-    const modals = document.querySelectorAll('.modal');
     const modalCloses = document.querySelectorAll('.modal-close');
 
     modalTriggers.forEach(trigger => {
