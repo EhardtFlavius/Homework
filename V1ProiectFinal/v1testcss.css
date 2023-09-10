@@ -39,13 +39,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 150px;
+    right: 100px;
     z-index: 11;
     
   }
   header ul li {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 13px;
   }
   header ul li a {
     font-size: 30px;
@@ -184,7 +184,7 @@
 }
 
 .background-stars{
-  background-image: url(/ProiectFinal/V1ProiectFinal/Pictures/stars.png);
+  background-image: url(/V1ProiectFinal/Pictures/stars.png);
 }
 
 .button-custom-position{
@@ -220,6 +220,7 @@
 
 .img-custom{
   border: 8px solid black;
+  height: 250px
 }
 
 .contact-text{
