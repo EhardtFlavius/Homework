@@ -52,3 +52,21 @@
       left: 2%; /* Modifică poziția titlului la dimensiuni mai mici */
     }
   }
+
+
+  @media screen and (max-width: 1536px) {
+    ul {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: flex-start; /* Move the menu to the left */
+    }
+  
+    li {
+      position: relative;
+      right: 35%;
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Add some spacing between menu items */
+    }
+    a {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  }
