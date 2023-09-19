@@ -70,3 +70,23 @@
       font-size: 14px; /* Smaller font size for smaller screens */
     }
   }
+  @media screen and (max-width: 1536px){
+    nav{
+      width: 1536px;
+    }
+    form input{
+      position: relative;
+      right: 5%;
+    }
+    form button{
+      position: relative;
+      right: 5%;
+    }
+    #moveButton {
+      font-size: 11px;
+      position: relative;
+      left: 130%;
+    }
+    
+
+  }
